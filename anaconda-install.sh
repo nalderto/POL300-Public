@@ -1,5 +1,6 @@
 #!/bin/bash
 
+module load anaconda
 rcac-conda-env create -n POL300 -j -y
 module load use.own
 module load conda-env/POL300-py3.7.0
