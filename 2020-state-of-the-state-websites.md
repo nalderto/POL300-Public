@@ -1,6 +1,6 @@
 # 2020 State of the State Websites
 
-1. [Alabama - Kay Ivey](https://www.alreporter.com/2020/02/04/gov-kay-iveys-2020-state-of-the-state-address/)
+0. [Alabama - Kay Ivey](https://www.alreporter.com/2020/02/04/gov-kay-iveys-2020-state-of-the-state-address/)
 1. [Alaska - Mike Dunleavy](https://gov.alaska.gov/newsroom/2020/01/27/2020-state-of-the-state-address/)
 1. [Arizona - Doug Ducey](https://www.azcentral.com/story/news/politics/arizona/2020/01/13/full-text-arizona-gov-duceys-2020-state-of-the-state/2827890001/)
 1. [Arkansas - Asa Hutchinson](https://governor.arkansas.gov/news-media/speeches/2020-state-of-the-state-address)
