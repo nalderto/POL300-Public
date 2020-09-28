@@ -36,3 +36,6 @@
 1. [Vermont - Phil Scott](https://governor.vermont.gov/press-release/governor-phil-scott-delivers-2020-state-state-address)
 1. [Washington - Jay Inslee](https://www.governor.wa.gov/news-media/news-media/speeches/2020-state-state)
 1. [Wisconsin - Tony Evers](https://www.wbay.com/content/news/Complete-text-of-Gov-Evers-2020-State-of-the-State-address-567221421.html)
+1. [Wisconsin - Tony Evers](https://www.wbay.com/content/news/Complete-text-of-Gov-Evers-2020-State-of-the-State-address-567221421.html)
+
+Group 40: [Georgia - Brian Kemp](https://gov.georgia.gov/press-releases/2020-01-16/governor-brian-p-kemps-2020-state-state-address)
