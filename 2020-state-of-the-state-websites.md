@@ -12,7 +12,7 @@
 1. [Hawaii - David Ige](https://governor.hawaii.gov/newsroom/latest-news/office-of-the-governor-state-of-the-state-address-full-text/)
 1. [Illinois - J.B. Pritzker](https://www2.illinois.gov/Pages/news-item.aspx?ReleaseID=21094)
 1. [Indiana - Eric Holcomb](https://www.in.gov/gov/2020stateofstate.htm)
-1. [Iowa - Kim Reynolds](https://governor.iowa.gov/press-release/gov-reynolds-delivers-condition-of-the-state)
+1. [Iowa - Kim Reynolds](https://www.desmoinesregister.com/story/news/politics/2020/01/14/governor-kim-reynolds-full-2020-condition-state-address/4462859002/)
 1. [Kansas - Laura Kelly](https://governor.kansas.gov/governor-kelly-delivers-the-state-of-the-state-address/)
 1. [Kentucky - Andy Beshear](https://www.usnews.com/news/best-states/kentucky/articles/2020-01-14/text-of-kentucky-gov-beshears-state-of-commonwealth-speech)
 1. [Louisiana - John Bel Edwards](https://gov.louisiana.gov/index.cfm/newsroom/detail/2393)
