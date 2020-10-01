@@ -14,7 +14,7 @@
 1. [Indiana - Eric Holcomb](https://www.in.gov/gov/2020stateofstate.htm)
 1. [Iowa - Kim Reynolds](https://www.desmoinesregister.com/story/news/politics/2020/01/14/governor-kim-reynolds-full-2020-condition-state-address/4462859002/)
 1. [Kansas - Laura Kelly](https://governor.kansas.gov/governor-kelly-delivers-the-state-of-the-state-address/)
-1. [Kentucky - Andy Beshear](https://www.usnews.com/news/best-states/kentucky/articles/2020-01-14/text-of-kentucky-gov-beshears-state-of-commonwealth-speech)
+1. [Kentucky - Andy Beshear](https://web.archive.org/web/20200304131858/https://www.usnews.com/news/best-states/kentucky/articles/2020-01-14/text-of-kentucky-gov-beshears-state-of-commonwealth-speech)
 1. [Louisiana - John Bel Edwards](https://gov.louisiana.gov/index.cfm/newsroom/detail/2393)
 1. [Maryland - Larry Hogan](https://governor.maryland.gov/2020/02/05/2020-state-of-the-state-address/)
 1. [Massachusetts - Charlie Baker](https://www.mass.gov/news/governor-baker-delivers-2020-state-of-the-commonwealth-address)
