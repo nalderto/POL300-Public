@@ -1,0 +1,10 @@
+test = {'name': 'q3',
+        'points': 1,
+        'suites': [{'cases': [{'code': '>>> list_of_words = ["sister", "habit", "underline", "idea", "lake", "sun", "year"]\n >>> list_of_words = exclude_four_letter_words(list_of_words) \n >>> assert "sister" in list_of_words and "habit" in list_of_words and "underline" in list_of_words and "idea" not in list_of_words and "lake" not in list_of_words and "sun" in list_of_words and "year" not in list_of_words',
+                               'hidden': False, 'locked': False},
+                              {'code': '>>> list_of_words = ["nature", "dragon", "sing", "vote", "low", "market", "folk", "pearl"]\n >>> list_of_words = exclude_four_letter_words(list_of_words) \n >>> assert "nature" in list_of_words and "dragon" in list_of_words and "sing" not in list_of_words and "low" in list_of_words and "vote" not in list_of_words and "market" in list_of_words and "folk" not in list_of_words and "pearl" in list_of_words',
+                               'hidden': False, 'locked': False}],
+                    'scored': True,
+                    'setup': '',
+                    'teardown': '',
+                    'type': 'doctest'}]}
