@@ -1,0 +1,7 @@
+gensim
+textstat
+textblob
+re
+requests
+bs4
+lxml
