@@ -7,7 +7,8 @@ test = {
                 {
                     "code": r"""
                     >>> import utils
-                    >>> assert utils.q1_test()
+                    >>> df = get_campaign_spending_data()
+                    >>> assert utils.q1_test(df)
                     """,
                     "hidden": False,
                     "locked": False,
