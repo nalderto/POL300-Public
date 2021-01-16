@@ -1,6 +1,6 @@
 test = {
     "name": "q1",       # name of the test
-    "points": 1,        # number of points for the entire suite
+    "points": 16,        # number of points for the entire suite
     "suites": [         # list of suites, only 1 suite allowed!
         {
             "cases": [                  # list of test cases
@@ -97,7 +97,6 @@ test = {
                 },
                 {
                     "code": r"""
-
                     >>> assert 'Keyword3' in get_sots().columns
                     """,
                     "hidden": False,

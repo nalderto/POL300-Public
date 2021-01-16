@@ -1,7 +1,7 @@
+lxml
 requests
 bs4
 pandas
-re
 textblob
 textstat
 gensim
