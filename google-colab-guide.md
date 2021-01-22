@@ -54,6 +54,8 @@ Make sure that you have answered all the exercise questions and that you are get
 ### Step 6: Download the .ipynb
 After completing all the exercises in the Python notebook, download the .ipynb file to your computer.  In the menu bar, select "File", then click "Download .ipynb."
 
+![Download .ipynb file](https://user-images.githubusercontent.com/25762130/104896057-a4a72e00-5944-11eb-897f-620cdb7a5f76.png)
+
 ### Step 7: Upload to Gradescope
 Now you can upload your .ipynb file to Gradescope.  You can use this link to access [Gradescope](https://www.gradescope.com/courses/229900).  Find the appropriate assignment and upload the .ipynb file that you downloaded in step 6.
 
