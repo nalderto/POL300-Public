@@ -3,7 +3,7 @@
 ## Introduction
 For this course, we will be using an online application known as Google Colab for completing Python assignments.  Google Colab will allow us to write and edit Jupyter Notebooks for Python.  Essentially, a Jupyter Notebook is a interactive and user-friendly way of writing and sharing Python code.  
 
-One of the major benefits for using Google Colab is that it doesn't require any setup on your personal computer.  Installing and setting up a Python environment can sometimes be a frustrating and time-consuming experience.  Google Colab avoids this by having a Python environment already setup for you to use in a web browser.  So there is no need to do any installation.  All you have to do is go to [https://colab.research.google.com/](this website).
+One of the major benefits for using Google Colab is that it doesn't require any setup on your personal computer.  Installing and setting up a Python environment can sometimes be a frustrating and time-consuming experience.  Google Colab avoids this by having a Python environment already setup for you to use in a web browser.  So there is no need to do any installation.  All you have to do is go to [this website](https://colab.research.google.com).
 
 The other major benefit is that you are using Google's powerful servers.  While none of the tasks we will complete in this course are particularly resource intensive, it is still convenient to offload the work onto Google's servers.  Depending on what you are trying to achieve, this may result in your code running faster.
 
