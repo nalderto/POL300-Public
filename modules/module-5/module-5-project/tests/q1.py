@@ -6,6 +6,12 @@ test = {
             "cases": [                  # list of test cases
                 {
                     "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
+                    >>> blockPrint()
                     >>> assert 'State' in get_sots().columns
                     """,
                     "hidden": False,
@@ -13,6 +19,12 @@ test = {
                 },
                 {
                     "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
+                    >>> blockPrint()
                     >>> assert 'Governor' in get_sots().columns
                     """,
                     "hidden": False,
@@ -20,6 +32,12 @@ test = {
                 },
                 {
                     "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
+                    >>> blockPrint()
                     >>> assert 'Polarity' in get_sots().columns
                     """,
                     "hidden": False,
@@ -27,6 +45,12 @@ test = {
                 },
                 {
                     "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
+                    >>> blockPrint()
                     >>> assert 'Subjectivity' in get_sots().columns
                     """,
                     "hidden": False,
@@ -34,6 +58,12 @@ test = {
                 },
                 {
                     "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
+                    >>> blockPrint()
                     >>> assert 'Syllables' in get_sots().columns
                     """,
                     "hidden": False,
@@ -41,6 +71,12 @@ test = {
                 },
                 {
                     "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
+                    >>> blockPrint()
                     >>> assert 'Words' in get_sots().columns
                     """,
                     "hidden": False,
@@ -55,6 +91,12 @@ test = {
                 },
                 {
                     "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
+                    >>> blockPrint()
                     >>> assert 'Gunning' in get_sots().columns
                     """,
                     "hidden": False,
@@ -62,6 +104,12 @@ test = {
                 },
                 {
                     "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
+                    >>> blockPrint()
                     >>> assert 'ARI' in get_sots().columns
                     """,
                     "hidden": False,
@@ -69,6 +117,12 @@ test = {
                 },
                 {
                     "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
+                    >>> blockPrint()
                     >>> assert 'ColemanLiau' in get_sots().columns
                     """,
                     "hidden": False,
@@ -76,6 +130,12 @@ test = {
                 },
                 {
                     "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
+                    >>> blockPrint()
                     >>> assert 'RCS' in get_sots().columns
                     """,
                     "hidden": False,
@@ -83,6 +143,12 @@ test = {
                 },
                 {
                     "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
+                    >>> blockPrint()
                     >>> assert 'Keyword1' in get_sots().columns
                     """,
                     "hidden": False,
@@ -90,6 +156,12 @@ test = {
                 },
                 {
                     "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
+                    >>> blockPrint()
                     >>> assert 'Keyword2' in get_sots().columns
                     """,
                     "hidden": False,
@@ -97,6 +169,12 @@ test = {
                 },
                 {
                     "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
+                    >>> blockPrint()
                     >>> assert 'Keyword3' in get_sots().columns
                     """,
                     "hidden": False,
@@ -104,6 +182,12 @@ test = {
                 },
                 {
                     "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
+                    >>> blockPrint()
                     >>> assert 'Keyword4' in get_sots().columns
                     """,
                     "hidden": False,
@@ -111,6 +195,12 @@ test = {
                 },
                 {
                     "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
+                    >>> blockPrint()
                     >>> assert 'Keyword5' in get_sots().columns
                     """,
                     "hidden": False,

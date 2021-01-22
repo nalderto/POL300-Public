@@ -6,7 +6,15 @@ test = {
             "cases": [                  # list of test cases
                 {
                     "code": r"""
-                    >>> polarity, subjectivity = get_sentiment(transcript_text)
+                    >>> import utils
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
+                    >>> blockPrint()
+                    >>> polarity, subjectivity = get_sentiment(utils.get_transcript())
+                    >>> enablePrint()
                     >>> assert polarity == 0.15544314121712638
                     """,
                     "hidden": False,
@@ -14,7 +22,14 @@ test = {
                 },
                 {
                     "code": r"""
-                    >>> polarity, subjectivity = get_sentiment(transcript_text)
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
+                    >>> blockPrint()
+                    >>> polarity, subjectivity = get_sentiment(utils.get_transcript())
+                    >>> enablePrint()
                     >>> assert subjectivity == 0.46102034711905604
                     """,
                     "hidden": False,

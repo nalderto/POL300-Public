@@ -6,9 +6,16 @@ test = {
             "cases": [                  # list of test cases
                 {
                     "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
                     >>> import pandas as pd
                     >>> data = pd.read_csv("https://www.brookings.edu/wp-content/uploads/2017/01/vitalstats_ch8_tbl3.csv")
+                    >>> blockPrint()
                     >>> new_df = return_specific_data(data)
+                    >>> enablePrint()
                     >>> for i in range(34, 73):
                     ...     assert data.PctPartyUnityVotes[i] == new_df[i]
                     """,

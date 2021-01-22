@@ -6,9 +6,16 @@ test = {
             "cases": [                  # list of test cases
                 {
                     "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
                     >>> import pandas as pd
                     >>> df = pd.DataFrame({'name': ['Purdue', 'Ohio State', 'Michigan'], 'nickname': ['Boilermakers', 'Buckeyes', 'Wolverines']})
+                    >>> blockPrint()
                     >>> new_df = add_founded_year(df)
+                    >>> enablePrint()
                     >>> assert new_df['name'].equals(df['name'])
                     >>> assert new_df['nickname'].equals(df['nickname'])
                     >>> assert new_df['founded'].equals(pd.Series([1869, 1870, 1817]))

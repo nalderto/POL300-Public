@@ -7,13 +7,13 @@ test = {
                 {
                     "code": r"""
                     >>> import sys, os
-		    >>> def blockPrint():
-		    ...		sys.stdout = open(os.devnull, 'w')
-		    >>> def enablePrint():
-		    ...		sys.stdout = sys.__stdout__
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
                     >>> import pandas as pd
-                    >>> state = get_state()
-                    >>> chamber = get_chamber()
+                    >>> state = getState()
+                    >>> chamber = getChamber()
                     >>> state = state.title()
                     >>> chamber = chamber.title().replace(" Of ", " of ")
                     >>> answer_df = pd.read_csv("https://raw.githubusercontent.com/nalderto/POL300-Public/master/All-Campaign-Contributions.csv")

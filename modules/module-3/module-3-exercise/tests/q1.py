@@ -6,8 +6,15 @@ test = {
             "cases": [                  # list of test cases
                 {
                     "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
                     >>> import pandas as pd
+                    >>> blockPrint()
                     >>> table = str(get_table())
+                    >>> enablePrint()
                     >>> df = pd.read_html(table, header=1, index_col=False)[0]
                     >>> amount= ['$19,285', '$36,150', '$50,650', '$64,846', '$44,314', '$49,204', '$64,756', '$164,829', '$24,143', '$17,425']
                     >>> candidates = [2, 2, 1, 1, 2, 3, 3, 3, 1, 1]

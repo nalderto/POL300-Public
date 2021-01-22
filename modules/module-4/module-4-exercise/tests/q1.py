@@ -6,8 +6,15 @@ test = {
             "cases": [                  # list of test cases
                 {
                     "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
                     >>> import utils
+                    >>> blockPrint()
                     >>> df = get_campaign_spending_data()
+                    >>> enablePrint()
                     >>> assert utils.q1_test(df)
                     """,
                     "hidden": False,

@@ -6,9 +6,16 @@ test = {
             "cases": [                  # list of test cases
                 {
                     "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
                     >>> import pandas as pd
                     >>> iris = pd.read_csv('https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv')
+                    >>> blockPrint()
                     >>> export_big_iris(iris)
+                    >>> enablePrint()
                     >>> new_iris = pd.read_csv('big.csv').sort_index(axis=1)
                     >>> proper_rows = pd.DataFrame({'sepal_length': [7.2, 7.7, 7.9], 'sepal_width': [3.6, 3.8, 3.8], 'petal_length': [6.1, 6.7, 6.4], 'petal_width': [2.5, 2.2, 2.0], 'species': ['virginica'] * 3}).sort_index(axis=1)
                     >>> assert new_iris.equals(proper_rows)

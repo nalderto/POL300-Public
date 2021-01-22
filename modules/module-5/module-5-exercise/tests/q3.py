@@ -6,7 +6,14 @@ test = {
             "cases": [                  # list of test cases
                 {
                     "code": r"""
-                    >>> words = get_keywords(transcript_text)
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
+                    >>> blockPrint()
+                    >>> words = get_keywords(utils.get_transcript())
+                    >>> enablePrint()
                     >>> answer = ['americans', 'new', 'thanks', 'america', 'family', 'tonight', 'free', 'forcing', 'works', 'year']
                     >>> assert words == answer
                     """,
