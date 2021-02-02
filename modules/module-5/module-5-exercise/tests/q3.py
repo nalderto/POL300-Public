@@ -6,7 +6,7 @@ test = {
             "cases": [                  # list of test cases
                 {
                     "code": r"""
-                    >>> import sys, os
+                    >>> import sys, os, utils
 		            >>> def blockPrint():
 		            ...		sys.stdout = open(os.devnull, 'w')
 		            >>> def enablePrint():

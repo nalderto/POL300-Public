@@ -1,12 +1,18 @@
 test = {'name': 'q1',
         'points': 1,
-        'suites': [{'cases': [{'code': '>>> qualifyForMedicare(65)\nTrue',
-                               'hidden': False, 'locked': False},
-                              {'code': '>>> qualifyForMedicare(64)\nFalse',
-                               'hidden': False, 'locked': False},
-                              {'code': '>>> qualifyForMedicare(72)\nTrue',
-                               'hidden': False, 'locked': False},
-                              {'code': '>>> qualifyForMedicare(18)\nFalse',
+        'suites': [{'cases': [{'code': r"""
+                                >>> import sys, os
+		                >>> def blockPrint():
+		                ...		sys.stdout = open(os.devnull, 'w')
+		                >>> def enablePrint():
+		                ...		sys.stdout = sys.__stdout__
+                                >>> blockPrint()
+                                >>> assert qualifyForMedicare(65)
+                                >>> assert not qualifyForMedicare(64)
+                                >>> assert qualifyForMedicare(72)
+                                >>> assert not qualifyForMedicare(18)
+                                >>> enablePrint()
+                                """,
                                'hidden': False, 'locked': False}],
                     'scored': True,
                     'setup': '',
