@@ -12,7 +12,8 @@ test = {
 		            >>> def enablePrint():
 		            ...		sys.stdout = sys.__stdout__
                     >>> blockPrint()
-                    >>> assert 'State' in get_sots().columns
+                    >>> df = get_sots()
+                    >>> assert 'State' in df.columns
                     """,
                     "hidden": False,
                     "locked": False,
@@ -25,7 +26,8 @@ test = {
 		            >>> def enablePrint():
 		            ...		sys.stdout = sys.__stdout__
                     >>> blockPrint()
-                    >>> assert 'Governor' in get_sots().columns
+                    >>> df = get_sots()
+                    >>> assert 'Governor' in df.columns
                     """,
                     "hidden": False,
                     "locked": False,
@@ -38,7 +40,8 @@ test = {
 		            >>> def enablePrint():
 		            ...		sys.stdout = sys.__stdout__
                     >>> blockPrint()
-                    >>> assert 'Polarity' in get_sots().columns
+                    >>> df = get_sots()
+                    >>> assert 'Polarity' in df.columns
                     """,
                     "hidden": False,
                     "locked": False,
@@ -51,7 +54,8 @@ test = {
 		            >>> def enablePrint():
 		            ...		sys.stdout = sys.__stdout__
                     >>> blockPrint()
-                    >>> assert 'Subjectivity' in get_sots().columns
+                    >>> df = get_sots()
+                    >>> assert 'Subjectivity' in df.columns
                     """,
                     "hidden": False,
                     "locked": False,
@@ -64,7 +68,8 @@ test = {
 		            >>> def enablePrint():
 		            ...		sys.stdout = sys.__stdout__
                     >>> blockPrint()
-                    >>> assert 'Syllables' in get_sots().columns
+                    >>> df = get_sots()
+                    >>> assert 'Syllables' in df.columns
                     """,
                     "hidden": False,
                     "locked": False,
@@ -77,27 +82,8 @@ test = {
 		            >>> def enablePrint():
 		            ...		sys.stdout = sys.__stdout__
                     >>> blockPrint()
-                    >>> assert 'Words' in get_sots().columns
-                    """,
-                    "hidden": False,
-                    "locked": False,
-                },
-                {
-                    "code": r"""
-                    >>> assert 'FleschKincaid' in get_sots().columns
-                    """,
-                    "hidden": False,
-                    "locked": False,
-                },
-                {
-                    "code": r"""
-                    >>> import sys, os
-		            >>> def blockPrint():
-		            ...		sys.stdout = open(os.devnull, 'w')
-		            >>> def enablePrint():
-		            ...		sys.stdout = sys.__stdout__
-                    >>> blockPrint()
-                    >>> assert 'Gunning' in get_sots().columns
+                    >>> df = get_sots()
+                    >>> assert 'Words' in df.columns
                     """,
                     "hidden": False,
                     "locked": False,
@@ -110,7 +96,8 @@ test = {
 		            >>> def enablePrint():
 		            ...		sys.stdout = sys.__stdout__
                     >>> blockPrint()
-                    >>> assert 'ARI' in get_sots().columns
+                    >>> df = get_sots()
+                    >>> assert 'FleschKincaid' in df.columns
                     """,
                     "hidden": False,
                     "locked": False,
@@ -123,7 +110,8 @@ test = {
 		            >>> def enablePrint():
 		            ...		sys.stdout = sys.__stdout__
                     >>> blockPrint()
-                    >>> assert 'ColemanLiau' in get_sots().columns
+                    >>> df = get_sots()
+                    >>> assert 'Gunning' in df.columns
                     """,
                     "hidden": False,
                     "locked": False,
@@ -136,7 +124,8 @@ test = {
 		            >>> def enablePrint():
 		            ...		sys.stdout = sys.__stdout__
                     >>> blockPrint()
-                    >>> assert 'RCS' in get_sots().columns
+                    >>> df = get_sots()
+                    >>> assert 'ARI' in df.columns
                     """,
                     "hidden": False,
                     "locked": False,
@@ -149,7 +138,8 @@ test = {
 		            >>> def enablePrint():
 		            ...		sys.stdout = sys.__stdout__
                     >>> blockPrint()
-                    >>> assert 'Keyword1' in get_sots().columns
+                    >>> df = get_sots()
+                    >>> assert 'ColemanLiau' in df.columns
                     """,
                     "hidden": False,
                     "locked": False,
@@ -162,7 +152,8 @@ test = {
 		            >>> def enablePrint():
 		            ...		sys.stdout = sys.__stdout__
                     >>> blockPrint()
-                    >>> assert 'Keyword2' in get_sots().columns
+                    >>> df = get_sots()
+                    >>> assert 'RCS' in df.columns
                     """,
                     "hidden": False,
                     "locked": False,
@@ -175,7 +166,8 @@ test = {
 		            >>> def enablePrint():
 		            ...		sys.stdout = sys.__stdout__
                     >>> blockPrint()
-                    >>> assert 'Keyword3' in get_sots().columns
+                    >>> df = get_sots()
+                    >>> assert 'Keyword1' in df.columns
                     """,
                     "hidden": False,
                     "locked": False,
@@ -188,7 +180,8 @@ test = {
 		            >>> def enablePrint():
 		            ...		sys.stdout = sys.__stdout__
                     >>> blockPrint()
-                    >>> assert 'Keyword4' in get_sots().columns
+                    >>> df = get_sots()
+                    >>> assert 'Keyword2' in df.columns
                     """,
                     "hidden": False,
                     "locked": False,
@@ -201,7 +194,36 @@ test = {
 		            >>> def enablePrint():
 		            ...		sys.stdout = sys.__stdout__
                     >>> blockPrint()
-                    >>> assert 'Keyword5' in get_sots().columns
+                    >>> df = get_sots()
+                    >>> assert 'Keyword3' in df.columns
+                    """,
+                    "hidden": False,
+                    "locked": False,
+                },
+                {
+                    "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
+                    >>> blockPrint()
+                    >>> df = get_sots()
+                    >>> assert 'Keyword4' in df.columns
+                    """,
+                    "hidden": False,
+                    "locked": False,
+                },
+                {
+                    "code": r"""
+                    >>> import sys, os
+		            >>> def blockPrint():
+		            ...		sys.stdout = open(os.devnull, 'w')
+		            >>> def enablePrint():
+		            ...		sys.stdout = sys.__stdout__
+                    >>> blockPrint()
+                    >>> df = get_sots()
+                    >>> assert 'Keyword5' in df.columns
                     """,
                     "hidden": False,
                     "locked": False,
